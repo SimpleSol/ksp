@@ -54,7 +54,7 @@
         />
 
     <LinearLayout
-        android:id="@+id/circleIndicators"
+        android:id="@+id/indicators"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="60dp"
