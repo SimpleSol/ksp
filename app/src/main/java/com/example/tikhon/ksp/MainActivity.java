@@ -1,6 +1,7 @@
 package com.example.tikhon.ksp;
 
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
@@ -88,12 +89,13 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    private void showFail() {
-        Toast.makeText(this, "fail", Toast.LENGTH_SHORT).show();
+    private void showEasternEgg() {
+        final Intent intent = new Intent(this, EasternEggActivity.class);
+        startActivity(intent);
     }
 
-    private void showEasternEgg() {
-        Toast.makeText(this, "success", Toast.LENGTH_SHORT).show();
+    private void showFail() {
+        Toast.makeText(this, R.string.wrong_guess, Toast.LENGTH_SHORT).show();
     }
 
     private void resetIndicators() {
