@@ -9,8 +9,90 @@
     >
 
     <Button
-        android:layout_width="47dp"
+        android:id="@+id/btnGreen"
+        android:layout_width="@dimen/button_width"
         android:layout_height="wrap_content"
+        android:backgroundTint="@color/green"
+        app:layout_constraintEnd_toStartOf="@+id/btnOrange"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnRed"
+        app:layout_constraintTop_toTopOf="@+id/btnRed"
         />
+
+    <Button
+        android:id="@+id/btnBlue"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="156dp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toStartOf="@+id/btnRed"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <Button
+        android:id="@+id/btnRed"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/red"
+        app:layout_constraintEnd_toStartOf="@+id/btnGreen"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnBlue"
+        app:layout_constraintTop_toTopOf="@+id/btnBlue"
+        />
+
+    <Button
+        android:id="@+id/btnOrange"
+        android:layout_width="@dimen/button_width"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/btnGreen"
+        app:layout_constraintTop_toTopOf="@+id/btnGreen"
+        />
+
+    <LinearLayout
+        android:id="@+id/circleIndicators"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="60dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        >
+
+        <View
+            android:layout_width="@dimen/circle_indicator_size"
+            android:layout_height="@dimen/circle_indicator_size"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/circle_indicator"
+            />
+
+        <View
+            android:layout_width="@dimen/circle_indicator_size"
+            android:layout_height="@dimen/circle_indicator_size"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/circle_indicator"
+            />
+
+        <View
+            android:layout_width="@dimen/circle_indicator_size"
+            android:layout_height="@dimen/circle_indicator_size"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/circle_indicator"
+            />
+
+        <View
+            android:layout_width="@dimen/circle_indicator_size"
+            android:layout_height="@dimen/circle_indicator_size"
+            android:layout_marginEnd="8dp"
+            android:background="@drawable/circle_indicator"
+            />
+
+
+    </LinearLayout>
 
 </android.support.constraint.ConstraintLayout>
